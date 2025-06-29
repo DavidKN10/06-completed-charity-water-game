@@ -40,7 +40,7 @@ body {
     width: 250px;
     border-radius: 6px;
     color: #000000;
-    margin-left: 30px;
+    margin-left: 200px;
 }
 
 #logo img {
@@ -91,7 +91,8 @@ body {
     pointer-events: none;
 }
 
-#restart-btn {
+#restart-btn,
+#level-select-btn {
     background-color: #FFC907; /* Charity: water yellow */
     color: #222;
     border: none;
@@ -104,7 +105,8 @@ body {
     transition: background 0.2s;
 }
 
-#restart-btn:hover {
+#restart-btn:hover,
+#level-select-btn:hover {
     background-color: #2E9DF7; /* Charity: water blue */
     color: #fff;
 }
