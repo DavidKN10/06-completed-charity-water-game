@@ -71,27 +71,27 @@ const level4_winningCombination = [
 ];
 
 const level5 = [
-    ["empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty"],
-    ["empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty"],
-    ["empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty"],
-    ["empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty"],
-    ["empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty"],
-    ["empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty"],
-    ["empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty"],
-    ["empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty"],
-    ["empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty"],
-    ["empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty"],
+    ["source", "pipe-s-v", "pipe-t-lrb", "pipe-s-v", "pipe-s-v", "pipe-s-h", "pipe-s-h", "pipe-t-lrt", "pipe-s-h", "home"],
+    ["pipe-l-br", "pipe-s-v", "pipe-t-lrt", "pipe-s-h", "pipe-l-bl", "pipe-l-tr", "pipe-s-v", "pipe-c", "pipe-s-h", "pipe-l-br"],
+    ["pipe-l-tl", "pipe-l-bl", "home", "pipe-l-tr", "pipe-t-ltb", "pipe-t-ltb", "home", "pipe-l-tr", "pipe-l-bl", "pipe-s-v"],
+    ["home", "pipe-s-v", "pipe-l-br", "pipe-t-ltb", "pipe-s-v", "pipe-l-tr", "pipe-l-br", "pipe-l-bl", "pipe-l-tl", "pipe-s-v"],
+    ["pipe-s-v", "pipe-s-v", "pipe-l-bl", "pipe-l-tl", "pipe-t-rtb", "pipe-s-h", "pipe-t-lrt", "pipe-l-tr", "home", "pipe-s-v"],
+    ["pipe-s-v", "pipe-s-v", "pipe-s-v", "pipe-l-br", "pipe-t-ltb", "pipe-l-br", "pipe-s-h", "pipe-l-bl", "pipe-t-ltb", "pipe-t-ltb"],
+    ["pipe-s-v", "pipe-t-rtb", "home", "pipe-s-v", "pipe-l-tr", "pipe-l-tl", "home", "pipe-l-tr", "pipe-t-lrt", "pipe-l-tl"],
+    ["pipe-s-v", "pipe-s-v", "pipe-l-br", "pipe-l-tl", "pipe-l-br", "pipe-s-v", "pipe-t-lrb", "pipe-s-h", "pipe-s-h", "pipe-l-bl"],
+    ["pipe-s-v", "pipe-s-v", "pipe-t-rtb", "home", "pipe-l-tr", "pipe-s-v", "pipe-s-h", "pipe-s-h", "pipe-l-tr", "pipe-s-v"],
+    ["pipe-l-tl", "pipe-l-tl", "pipe-l-tr", "pipe-s-h", "pipe-s-h", "pipe-s-v", "pipe-s-h", "pipe-s-h", "pipe-l-tl", "home"]
 ];
 
 const level5_winningCombination = [
-    ["empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty"],
-    ["empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty"],
-    ["empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty"],
-    ["empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty"],
-    ["empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty"],
-    ["empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty"],
-    ["empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty"],
-    ["empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty"],
-    ["empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty"],
-    ["empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty"],
+    ["source", "pipe-s-h", "pipe-t-lrb", "pipe-s-h", "pipe-s-h", "pipe-s-h", "pipe-s-h", "pipe-t-lrb", "pipe-s-h", "home"],
+    ["pipe-l-br", "pipe-s-h", "pipe-t-lrt", "pipe-s-h", "pipe-l-bl", "pipe-l-br", "pipe-s-h", "pipe-c", "pipe-s-h", "pipe-l-bl"],
+    ["pipe-l-tr", "pipe-l-bl", "home", "pipe-l-br", "pipe-t-ltb", "pipe-t-rtb", "home", "pipe-l-tr", "pipe-l-bl", "pipe-s-v"],
+    ["home", "pipe-s-v", "pipe-l-tr", "pipe-t-ltb", "pipe-s-v", "pipe-l-tr", "pipe-l-bl", "pipe-l-br", "pipe-l-tl", "pipe-s-v"],
+    ["pipe-s-v", "pipe-s-v", "pipe-l-br", "pipe-l-tl", "pipe-t-rtb", "pipe-s-h", "pipe-t-lrt", "pipe-l-tl", "home", "pipe-s-v"],
+    ["pipe-s-v", "pipe-s-v", "pipe-s-v", "pipe-l-br", "pipe-t-ltb", "pipe-l-br", "pipe-s-h", "pipe-l-bl", "pipe-t-rtb", "pipe-t-ltb"],
+    ["pipe-s-v", "pipe-t-rtb", "home", "pipe-s-v", "pipe-l-tr", "pipe-l-tl", "home", "pipe-l-tr", "pipe-t-lrt", "pipe-l-tl"],
+    ["pipe-s-v", "pipe-s-v", "pipe-l-br", "pipe-l-tl", "pipe-l-br", "pipe-s-h", "pipe-t-lrt", "pipe-s-h", "pipe-s-h", "pipe-l-bl"],
+    ["pipe-s-v", "pipe-s-v", "pipe-t-rtb", "home", "pipe-l-tr", "pipe-s-h", "pipe-s-h", "pipe-s-h", "pipe-l-bl", "pipe-s-v"],
+    ["pipe-l-tr", "pipe-l-tl", "pipe-l-tr", "pipe-s-h", "pipe-s-h", "pipe-s-h", "pipe-s-h", "pipe-s-h", "pipe-l-tl", "home"]
 ];
