@@ -96,3 +96,59 @@ body {
 #mainFooter a:hover {
     color: #2E9DF7; /* Charity: water blue */
 }
+
+/* Styles for level cards and difficulty labels */
+.level-card {
+    background: white;
+    color: #222;
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin: 16px;
+    display: inline-block;
+    min-width: 180px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    vertical-align: top;
+}
+
+.level-card button {
+    background-color: #2E9DF7; /* Charity: water blue */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 24px;
+    font-size: 16px;
+    font-family: 'Crimson Text', serif;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+
+.level-card button:hover {
+    background-color: #FFC907; /* Charity: water yellow */
+    color: #222;
+}
+
+.difficulty {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.difficulty.easy {
+    background-color: #4FCB53; /* Green */
+    color: white;
+}
+
+.difficulty.medium {
+    background-color: #FFC907; /* Yellow */
+    color: #222;
+}
+
+.difficulty.hard {
+    background-color: #F5402C; /* Red */
+    color: white;
+}

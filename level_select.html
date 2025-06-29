@@ -1,9 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select a Level</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <!-- Logo section at the top -->
+    <div id="logo">
+        <img src="img/cw_logo_horizontal.png" alt="Charity: water logo">
+        <h1>Pipeline To Change</h1>
+    </div>
+
+    <!-- Section for level cards -->
+    <section id="levelCards">
+        <!-- Level 1 Card -->
+        <div class="level-card">
+            <h2>Level 1</h2>
+            <!-- Difficulty label: Easy (green) -->
+            <span class="difficulty easy">Easy</span>
+            <button onclick="selectLevel(1)">Play Level 1</button>
+        </div>
+        <!-- Level 2 Card -->
+        <div class="level-card">
+            <h2>Level 2</h2>
+            <!-- Difficulty label: Easy (green) -->
+            <span class="difficulty easy">Easy</span>
+            <button onclick="selectLevel(2)">Play Level 2</button>
+        </div>
+        <!-- Level 3 Card -->
+        <div class="level-card">
+            <h2>Level 3</h2>
+            <!-- Difficulty label: Medium (yellow) -->
+            <span class="difficulty medium">Medium</span>
+            <button onclick="selectLevel(3)">Play Level 3</button>
+        </div>
+        <!-- Level 4 Card -->
+        <div class="level-card">
+            <h2>Level 4</h2>
+            <!-- Difficulty label: Hard (red) -->
+            <span class="difficulty medium">Medium</span>
+            <button onclick="selectLevel(4)">Play Level 4</button>
+        </div>
+        <!-- Level 5 Card -->
+        <div class="level-card">
+            <h2>Level 5</h2>
+            <!-- Difficulty label: Hard (red) -->
+            <span class="difficulty hard">Hard</span>
+            <button onclick="selectLevel(5)">Play Level 5</button>
+        </div>
+    </section>
+    <!-- Footer with charity: water link -->
+    <footer id="mainFooter">
+        <!-- Link to charity: water's website -->
+        <a href="https://www.charitywater.org/home" target="_blank" rel="noopener noreferrer">
+            Visit charity: water
+        </a>
+        <br>
+        <a href="https://www.charitywater.org/about" target="_blank" rel="noopener noreferrer">
+            About charity: water
+        </a>
+        <br>
+        <a href="https://www.charitywater.org/take-action" target="_blank" rel="noopener noreferrer">
+            Donate
+        </a>
+        <br>
+        <a href="https://www.charitywater.org/contact" target="_blank" rel="noopener noreferrer">
+            Contact
+        </a>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
