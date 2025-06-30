@@ -23,35 +23,35 @@
             <h2>Level 1</h2>
             <!-- Difficulty label: Easy (green) -->
             <span class="difficulty easy">Easy</span>
-            <button onclick="selectLevel(1)">Play Level 1</button>
+            <button class="play-btn" data-level="1">Play Level 1</button>
         </div>
         <!-- Level 2 Card -->
         <div class="level-card">
             <h2>Level 2</h2>
             <!-- Difficulty label: Easy (green) -->
             <span class="difficulty easy">Easy</span>
-            <button onclick="selectLevel(2)">Play Level 2</button>
+            <button class="play-btn" data-level="2">Play Level 2</button>
         </div>
         <!-- Level 3 Card -->
         <div class="level-card">
             <h2>Level 3</h2>
             <!-- Difficulty label: Medium (yellow) -->
             <span class="difficulty medium">Medium</span>
-            <button onclick="selectLevel(3)">Play Level 3</button>
+            <button class="play-btn" data-level="3">Play Level 3</button>
         </div>
         <!-- Level 4 Card -->
         <div class="level-card">
             <h2>Level 4</h2>
             <!-- Difficulty label: Hard (red) -->
             <span class="difficulty medium">Medium</span>
-            <button onclick="selectLevel(4)">Play Level 4</button>
+            <button class="play-btn" data-level="4">Play Level 4</button>
         </div>
         <!-- Level 5 Card -->
         <div class="level-card">
             <h2>Level 5</h2>
             <!-- Difficulty label: Hard (red) -->
             <span class="difficulty hard">Hard</span>
-            <button onclick="selectLevel(5)">Play Level 5</button>
+            <button class="play-btn" data-level="5">Play Level 5</button>
         </div>
     </section>
     <!-- Footer with charity: water link -->
@@ -73,16 +73,46 @@
             Contact
         </a>
     </footer>
+    <!-- Audio element for button sound -->
+    <audio id="selectAudio" src="select.mp3"></audio>
     <script src="script.js"></script>
     <script>
-        // Add a click event to the Back to Home button
+        // Get the audio element
+        const selectAudio1 = document.getElementById('selectAudio');
+
+        // Handle Back to Home button
         const backHomeBtn = document.getElementById('back-home-btn');
         if (backHomeBtn) {
             backHomeBtn.addEventListener('click', function() {
-                // Go to the home page
-                window.location.href = 'index.html';
+                // Play audio, then go home
+                selectAudio1.currentTime = 0;
+                selectAudio1.play();
+                selectAudio1.onended = function() {
+                    window.location.href = 'index.html';
+                };
+                setTimeout(function() {
+                    window.location.href = 'index.html';
+                }, 700);
             });
         }
+
+        // Handle all Play Level buttons
+        const playBtns = document.querySelectorAll('.play-btn');
+        playBtns.forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                // Get the level number from data-level attribute
+                const level = btn.getAttribute('data-level');
+                // Play audio, then go to the level page
+                selectAudio1.currentTime = 0;
+                selectAudio1.play();
+                selectAudio1.onended = function() {
+                    window.location.href = `levels/level${level}.html`;
+                };
+                setTimeout(function() {
+                    window.location.href = `levels/level${level}.html`;
+                }, 700);
+            });
+        });
     </script>
 </body>
 </html>
